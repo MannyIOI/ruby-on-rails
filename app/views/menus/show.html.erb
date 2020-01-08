@@ -1,0 +1,27 @@
+<div>
+<%= link_to 'Back', menus_path %>
+  <p id="notice"><%= notice %></p>
+
+
+  <div class="menu-item-container">
+    <div class="menu-item-image-container">
+      <img
+        class="menu-item-image"
+         
+        src="https://community-cdn-digitalocean-com.global.ssl.fastly.net/assets/tutorials/images/large/ruby-on-rails.jpg?1573051979">
+    </div>
+    <div class="menu-item-detail-container">
+      <p>
+        <strong>Title:</strong>
+        <%= @menu.title %>
+      </p>
+
+      <p>
+        <strong>Price:</strong>
+        <%= @menu.price %>
+      </p>
+
+      <%= link_to 'Edit', edit_menu_path(@menu) %>
+    </div>
+  </div>
+</div>

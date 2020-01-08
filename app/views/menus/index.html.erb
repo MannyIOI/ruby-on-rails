@@ -1,0 +1,31 @@
+<div class="menu-index-container">
+  <p id="notice"><%= notice %></p>
+
+  <h1>Menus</h1>
+
+  <table class="menu-table">
+    <thead>
+      <tr>
+        <th>Title</th>
+        <th>Price</th>
+        <th colspan="3"></th>
+      </tr>
+    </thead>
+
+    <tbody class="abcd">
+      <% @menus.each do |menu| %>
+        <tr>
+          <td class="menu-table-title"><%= menu.title %></td>
+          <td class="menu-table-price"><%= menu.price %></td>
+          <td class="menu-table-show"><%= link_to 'Show', menu %></td>
+          <td class="menu-table-edit"><%= link_to 'Edit', edit_menu_path(menu) %></td>
+          <td class="menu-table-delete"><%= link_to 'Destroy', menu, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+
+  <br>
+
+  <%= link_to 'New Menu', new_menu_path %>
+</div>

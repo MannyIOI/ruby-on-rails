@@ -1,0 +1,76 @@
+// Place all the styles related to the Menus controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+.menu-index-container {
+    align-self: center;
+}
+
+.menu-table {
+    align-self: center;
+    border-radius: 10px;
+    background-color: gray;
+}
+
+.menu-table-title {
+    color: white;
+    font-weight: 700;
+    font-size: large;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.menu-table-price {
+    color: white;
+    font-size: medium;
+    font-style: italic;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.menu-table-show a {
+    color: white;
+    text-decoration: none;
+    
+}
+
+.menu-table-show {
+    border-radius: 10px;
+    background-color: yellowgreen;
+}
+
+.menu-table-edit a {
+    color: white;
+    text-decoration: none;
+}
+
+.menu-table-edit {
+    border-radius: 10px;
+    background-color: goldenrod;
+}
+
+.menu-table-delete a {
+    color: white;
+    text-decoration: none;
+}
+
+.menu-table-delete {
+    background-color: red;
+    border-radius: 10px;
+}
+
+.menu-item-image {
+    width: 100%;
+}
+
+.menu-item-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.menu-item-image-container {
+    flex: 2;
+    padding: 10px;
+}
+
+.menu-item-detail-container {
+    flex: 5;
+}
+
